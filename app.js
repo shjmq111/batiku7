@@ -16,7 +16,7 @@
             } else if (colour === "白" && number === 2) {
                 result = "大凶";
             } else if (colour === "オレンジ" && number === 0) {
-                result = "凶";
+                result = "大大吉";
             } else if (colour === "オレンジ" && number === 1) {
                 result = "大吉";
             } else if (colour === "オレンジ" && number === 2) {
