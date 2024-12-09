@@ -23,5 +23,5 @@
                 result = "中吉";
             }
 
-            document.getElementById('result-output').innerText = "あなたの今週の運勢は【" + result + "】です";
+            document.getElementById('result-output').innerText = "今日することはズバリ…⁉【" + result + "】です";
         }
