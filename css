@@ -9,7 +9,6 @@ body {
    align-items: center;
    height: 100vh;
 }
-/* コンテナのスタイル */
 .container {
    background-color: #fff;
    padding: 20px;
@@ -19,13 +18,12 @@ body {
    max-width: 400px;
    text-align: center;
 }
-/* タイトル */
 h1 {
    font-size: 24px;
    color: #333;
    margin-bottom: 20px;
 }
-/* ラベル */
+/* ラベルと入力フィールドのスタイル */
 label {
    font-size: 16px;
    color: #555;
@@ -33,7 +31,6 @@ label {
    display: block;
    text-align: left;
 }
-/* セレクトボックスと入力フィールドのスタイル */
 select, input[type="number"] {
    width: 100%;
    padding: 8px;
@@ -42,7 +39,6 @@ select, input[type="number"] {
    border: 1px solid #ccc;
    font-size: 16px;
 }
-/* ボタン */
 button {
    padding: 10px 20px;
    font-size: 18px;
@@ -53,11 +49,10 @@ button {
    cursor: pointer;
    margin-top: 15px;
 }
-/* ボタンのホバー効果 */
 button:hover {
    background-color: #0056b3;
 }
-/* 結果表示 */
+/* 結果表示のスタイル */
 #result-output {
    font-size: 18px;
    margin-top: 20px;
