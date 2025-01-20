@@ -1,7 +1,7 @@
 /* 全体のスタイル */
 body {
    font-family: 'Arial', sans-serif;
-   background-color: #f9f9fb; /* 薄いパステル背景 */
+   background-color: #f4f4f9; /* ライトグレーの背景 */
    margin: 0;
    padding: 0;
    display: flex;
@@ -20,7 +20,7 @@ body {
    max-width: 480px;
    text-align: center;
    font-size: 16px;
-   border: 2px solid #f39c12; /* 明るいオレンジのボーダー */
+   border: 2px solid #f39c12; /* オレンジ色のボーダー */
 }
 /* ヘッダーテキスト */
 h1 {
@@ -36,7 +36,7 @@ h1 {
    100% { transform: translateY(-10px); }
 }
 /* ラベルのスタイル */
-label {
+.label {
    font-size: 18px;
    color: #34495e; /* 深い青色 */
    display: block;
@@ -44,7 +44,7 @@ label {
    text-align: left;
 }
 /* セレクトボックスと入力フィールド */
-select, input[type="number"] {
+.select-box, .input-field {
    width: 100%;
    padding: 12px;
    margin: 10px 0 20px;
@@ -55,14 +55,14 @@ select, input[type="number"] {
    transition: all 0.3s ease-in-out;
 }
 /* セレクトボックスや入力フィールドにフォーカス時 */
-select:focus, input[type="number"]:focus {
-   border-color: #e74c3c; /* フォーカス時に赤色 */
+.select-box:focus, .input-field:focus {
+   border-color: #e74c3c; /* 赤色のボーダー */
    background-color: #fff7e6; /* 薄い黄色背景 */
    outline: none;
    box-shadow: 0 0 8px rgba(231, 76, 60, 0.5); /* 赤色の影を追加 */
 }
 /* ボタンのスタイル */
-button {
+.btn {
    padding: 14px 24px;
    font-size: 20px;
    color: white;
@@ -73,12 +73,12 @@ button {
    transition: background-color 0.3s ease, transform 0.2s ease;
 }
 /* ボタンのホバー効果 */
-button:hover {
+.btn:hover {
    background-color: #27ae60; /* 少し濃い緑色 */
    transform: scale(1.05); /* ボタンが少し大きくなる */
 }
 /* 結果表示 */
-#result-output {
+.result-text {
    font-size: 20px;
    margin-top: 20px;
    color: #3498db; /* 青色 */
@@ -86,7 +86,7 @@ button:hover {
    transition: color 0.3s ease-in-out;
 }
 /* 結果表示のホバー効果 */
-#result-output:hover {
+.result-text:hover {
    color: #f39c12; /* 結果をホバーした時にオレンジ色 */
 }
 /* アニメーションを加えた結果 */
@@ -94,6 +94,6 @@ button:hover {
    0% { transform: scale(0); opacity: 0; }
    100% { transform: scale(1); opacity: 1; }
 }
-#result-output {
+.result-text {
    animation: pop-up 0.5s ease-out; /* 結果がポップアップするアニメーション */
 }
