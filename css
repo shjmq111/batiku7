@@ -1,25 +1,153 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>今日すること</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<div class="container">
-<h1>今日すること占い</h1>
-<label for="colour-select">好きな寿司ネタ：</label>
-<select id="colour-select">
-<option value="マグロ">マグロ</option>
-<option value="サーモン">サーモン</option>
-<option value="いくら">いくら</option>
-</select>
-<label for="number-input">好きな数字を選んでください（0、1、2）:</label>
-<input type="number" id="number-input" min="0" max="2">
-<button onclick="checkFortune()">今日することはズバリ…⁉</button>
-<p id="result-output"></p>
-</div>
-<script src="app.js"></script>
-</body>
-</html> 
+/* 全体のスタイル */
+
+body {
+
+    font-family: 'Arial', sans-serif;
+
+    background-color: #f0f9ff; /* 薄い水色の背景 */
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    color: #333;
+
+}
+
+/* コンテナのスタイル */
+
+.container {
+
+    background-color: #ffffff;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+    width: 100%;
+
+    max-width: 450px;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    border: 2px solid #3498db; /* 青いボーダー */
+
+}
+
+/* ヘッダーテキスト */
+
+h1 {
+
+    font-size: 28px;
+
+    color: #e74c3c; /* 赤色 */
+
+    margin-bottom: 20px;
+
+    font-weight: bold;
+
+}
+
+/* ラベルのスタイル */
+
+label {
+
+    font-size: 18px;
+
+    color: #7f8c8d;
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    text-align: left;
+
+}
+
+/* セレクトボックスと入力フィールド */
+
+select, input[type="number"] {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 10px 0 20px;
+
+    border-radius: 8px;
+
+    border: 1px solid #3498db; /* 青色の枠線 */
+
+    font-size: 16px;
+
+    background-color: #f9f9f9;
+
+    transition: border-color 0.3s;
+
+}
+
+/* フォーカス時のスタイル */
+
+select:focus, input[type="number"]:focus {
+
+    border-color: #e74c3c; /* 赤色の枠線 */
+
+    outline: none;
+
+}
+
+/* ボタンのスタイル */
+
+button {
+
+    padding: 12px 20px;
+
+    font-size: 18px;
+
+    color: white;
+
+    background-color: #2ecc71; /* 緑色 */
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+
+}
+
+/* ボタンのホバー効果 */
+
+button:hover {
+
+    background-color: #27ae60; /* 少し暗い緑色 */
+
+}
+
+/* 結果表示 */
+
+#result-output {
+
+    font-size: 18px;
+
+    margin-top: 20px;
+
+    color: #3498db; /* 青色 */
+
+    font-weight: bold;
+
+} 
