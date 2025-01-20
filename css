@@ -151,3 +151,156 @@ button:hover {
     font-weight: bold;
 
 } 
+/* 全体のスタイル */
+
+body {
+
+    font-family: 'Arial', sans-serif;
+
+    background-color: #f3f4f6; /* パステルなライトグレーの背景 */
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    color: #333;
+
+}
+
+/* コンテナのスタイル */
+
+.container {
+
+    background-color: #fff;
+
+    padding: 30px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+
+    width: 100%;
+
+    max-width: 450px;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    border: 2px solid #f39c12; /* オレンジ色のボーダー */
+
+}
+
+/* ヘッダーテキスト */
+
+h1 {
+
+    font-size: 32px;
+
+    color: #e74c3c; /* 赤色 */
+
+    margin-bottom: 20px;
+
+    font-weight: bold;
+
+}
+
+/* ラベルのスタイル */
+
+label {
+
+    font-size: 18px;
+
+    color: #2c3e50; /* 深い青色 */
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    text-align: left;
+
+}
+
+/* セレクトボックスと入力フィールド */
+
+select, input[type="number"] {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 10px 0 20px;
+
+    border-radius: 8px;
+
+    border: 1px solid #f39c12; /* オレンジ色の枠線 */
+
+    font-size: 16px;
+
+    background-color: #fdf2e9; /* 薄いオレンジ色の背景 */
+
+    transition: border-color 0.3s;
+
+}
+
+/* フォーカス時のスタイル */
+
+select:focus, input[type="number"]:focus {
+
+    border-color: #e74c3c; /* 赤色の枠線 */
+
+    outline: none;
+
+}
+
+/* ボタンのスタイル */
+
+button {
+
+    padding: 12px 20px;
+
+    font-size: 18px;
+
+    color: white;
+
+    background-color: #3498db; /* 青色 */
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s;
+
+}
+
+/* ボタンのホバー効果 */
+
+button:hover {
+
+    background-color: #2980b9; /* 少し暗い青色 */
+
+}
+
+/* 結果表示 */
+
+#result-output {
+
+    font-size: 18px;
+
+    margin-top: 20px;
+
+    color: #2ecc71; /* 緑色 */
+
+    font-weight: bold;
+
+} 
