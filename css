@@ -1,99 +1,199 @@
 /* 全体のスタイル */
+
 body {
-   font-family: 'Arial', sans-serif;
-   background-color: #f4f4f9; /* ライトグレーの背景 */
-   margin: 0;
-   padding: 0;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   height: 100vh;
-   color: #333;
+
+    font-family: 'Arial', sans-serif;
+
+    background-color: #f8f9fa; /* 明るい背景色 */
+
+    margin: 0;
+
+    padding: 0;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    height: 100vh;
+
+    color: #333;
+
 }
+
 /* コンテナのスタイル */
+
 .container {
-   background-color: #fff;
-   padding: 30px;
-   border-radius: 15px;
-   box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
-   width: 100%;
-   max-width: 480px;
-   text-align: center;
-   font-size: 16px;
-   border: 2px solid #f39c12; /* オレンジ色のボーダー */
+
+    background-color: #fff;
+
+    padding: 30px;
+
+    border-radius: 15px;
+
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+
+    width: 100%;
+
+    max-width: 500px;
+
+    text-align: center;
+
+    font-size: 16px;
+
+    border: 2px solid #f39c12; /* オレンジ色のボーダー */
+
 }
+
 /* ヘッダーテキスト */
+
 h1 {
-   font-size: 32px;
-   color: #e74c3c; /* 鮮やかな赤色 */
-   margin-bottom: 20px;
-   font-weight: bold;
-   animation: bounce 1s infinite alternate; /* ヘッダーのバウンスアニメーション */
+
+    font-size: 32px;
+
+    color: #e74c3c; /* 鮮やかな赤色 */
+
+    margin-bottom: 20px;
+
+    font-weight: bold;
+
+    animation: bounce 1s infinite alternate; /* バウンスアニメーション */
+
 }
+
 /* ヘッダーのアニメーション */
+
 @keyframes bounce {
-   0% { transform: translateY(0); }
-   100% { transform: translateY(-10px); }
+
+    0% { transform: translateY(0); }
+
+    100% { transform: translateY(-10px); }
+
 }
+
 /* ラベルのスタイル */
-.label {
-   font-size: 18px;
-   color: #34495e; /* 深い青色 */
-   display: block;
-   margin-bottom: 8px;
-   text-align: left;
+
+label {
+
+    font-size: 18px;
+
+    color: #34495e; /* 深い青色 */
+
+    display: block;
+
+    margin-bottom: 8px;
+
+    text-align: left;
+
+    font-weight: bold;
+
 }
+
 /* セレクトボックスと入力フィールド */
-.select-box, .input-field {
-   width: 100%;
-   padding: 12px;
-   margin: 10px 0 20px;
-   border-radius: 8px;
-   border: 2px solid #3498db; /* 青色のボーダー */
-   font-size: 16px;
-   background-color: #f0f8ff; /* 薄い水色の背景 */
-   transition: all 0.3s ease-in-out;
+
+select, input[type="number"] {
+
+    width: 100%;
+
+    padding: 12px;
+
+    margin: 10px 0 20px;
+
+    border-radius: 8px;
+
+    border: 2px solid #3498db; /* 青色のボーダー */
+
+    font-size: 16px;
+
+    background-color: #f0f8ff; /* 薄い水色の背景 */
+
+    transition: all 0.3s ease-in-out;
+
 }
+
 /* セレクトボックスや入力フィールドにフォーカス時 */
-.select-box:focus, .input-field:focus {
-   border-color: #e74c3c; /* 赤色のボーダー */
-   background-color: #fff7e6; /* 薄い黄色背景 */
-   outline: none;
-   box-shadow: 0 0 8px rgba(231, 76, 60, 0.5); /* 赤色の影を追加 */
+
+select:focus, input[type="number"]:focus {
+
+    border-color: #e74c3c; /* 赤色のボーダー */
+
+    background-color: #fff7e6; /* 薄い黄色背景 */
+
+    outline: none;
+
+    box-shadow: 0 0 8px rgba(231, 76, 60, 0.5); /* 赤色の影 */
+
 }
-/* ボタンのスタイル */
-.btn {
-   padding: 14px 24px;
-   font-size: 20px;
-   color: white;
-   background-color: #2ecc71; /* 緑色のボタン */
-   border: none;
-   border-radius: 8px;
-   cursor: pointer;
-   transition: background-color 0.3s ease, transform 0.2s ease;
+
+/* ボタン */
+
+button {
+
+    padding: 14px 24px;
+
+    font-size: 20px;
+
+    color: white;
+
+    background-color: #2ecc71; /* 緑色のボタン */
+
+    border: none;
+
+    border-radius: 8px;
+
+    cursor: pointer;
+
+    transition: background-color 0.3s ease, transform 0.2s ease;
+
 }
+
 /* ボタンのホバー効果 */
-.btn:hover {
-   background-color: #27ae60; /* 少し濃い緑色 */
-   transform: scale(1.05); /* ボタンが少し大きくなる */
+
+button:hover {
+
+    background-color: #27ae60; /* 少し濃い緑色 */
+
+    transform: scale(1.05); /* ボタンが少し大きくなる */
+
 }
+
 /* 結果表示 */
-.result-text {
-   font-size: 20px;
-   margin-top: 20px;
-   color: #3498db; /* 青色 */
-   font-weight: bold;
-   transition: color 0.3s ease-in-out;
+
+#result-output {
+
+    font-size: 20px;
+
+    margin-top: 20px;
+
+    color: #3498db; /* 青色 */
+
+    font-weight: bold;
+
+    transition: color 0.3s ease-in-out;
+
 }
+
 /* 結果表示のホバー効果 */
-.result-text:hover {
-   color: #f39c12; /* 結果をホバーした時にオレンジ色 */
+
+#result-output:hover {
+
+    color: #f39c12; /* 結果をホバーした時にオレンジ色 */
+
 }
+
 /* アニメーションを加えた結果 */
+
 @keyframes pop-up {
-   0% { transform: scale(0); opacity: 0; }
-   100% { transform: scale(1); opacity: 1; }
+
+    0% { transform: scale(0); opacity: 0; }
+
+    100% { transform: scale(1); opacity: 1; }
+
 }
-.result-text {
-   animation: pop-up 0.5s ease-out; /* 結果がポップアップするアニメーション */
-}
+
+#result-output {
+
+    animation: pop-up 0.5s ease-out; /* 結果がポップアップするアニメーション */
+
+} 
