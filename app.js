@@ -1,39 +1,49 @@
-// 今日することを決める関数
+// 今日すること占いを実行する関数
 
 function checkFortune() {
 
-    const sushi = document.getElementById("colour-select").value; // 選んだ寿司ネタ
+  const sushi = document.getElementById('colour-select').value;  // 選んだ寿司ネタ
 
-    const number = document.getElementById("number-input").value; // 入力した数字
+  const number = document.getElementById('number-input').value; // 選んだ数字
 
-    // 数字が0, 1, 2でない場合は警告を出す
+  let fortune = "";
 
-    if (number < 0 || number > 2 || number === "") {
+  let colorClass = "";
 
-        alert("0, 1, 2の数字を入力してください。");
+  // 占い結果の判定
 
-        return;
+  if (sushi === "マグロ" && number == 0) {
 
-    }
+    fortune = "今日は元気に外出する日！新しい発見があるかも！";
 
-    // ランダムな結果を生成
+    colorClass = "success";  // 成功の時は緑色
 
-    const activities = [
+  } else if (sushi === "サーモン" && number == 1) {
 
-        "今日はリラックスして過ごしましょう！",
+    fortune = "今日はリラックスする日。家でのんびり過ごしてね！";
 
-        "新しいことに挑戦するのに最適な日です。",
+    colorClass = "relaxed";  // リラックスした結果
 
-        "友達と楽しい時間を過ごしてください！"
+  } else if (sushi === "いくら" && number == 2) {
 
-    ];
+    fortune = "今日は冒険的な一日！思い切って新しいことに挑戦しよう！";
 
-    // 結果を決定
+    colorClass = "adventure";  // 冒険的な結果
 
-    const result = activities[number] + " 寿司ネタは" + sushi + "です！";
+  } else {
 
-    // 結果を表示
+    fortune = "今日は何か新しい発見がある日かも！";
 
-    document.getElementById("result-output").textContent = result;
+    colorClass = "mystery";  // 謎めいた結果
+
+  }
+
+  // 結果を画面に表示
+
+  const resultText = document.getElementById('result-output');
+
+  resultText.textContent = fortune;
+
+  resultText.className = 'result-text ' + colorClass;  // クラスを追加して色を変える
 
 } 
